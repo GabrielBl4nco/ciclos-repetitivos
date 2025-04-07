@@ -1,0 +1,64 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ciclos2025;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Sala de Sistemas 5
+ */
+public class Ciclos2025 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      boolean ciclo = true;
+      
+      while(ciclo){
+          Scanner lectura = new Scanner(System.in);
+          System.out.print("MENU PRINCIPAL: \n 1.digitar nota 1 \n 2.digitar nota 2 \n 3.digitar nota 3 \n 4.Calcular nota final \n 5.salir \n");
+          System.out.print("DIGITA UNA OPCION: ");
+          
+          int opcion = lectura.nextInt();
+          /*
+          if (opcion == 1){
+              System.out.print("HAS SELECCIONADO LA OPCION 1");
+              ciclo = true;
+          }
+          if (opcion == 5){
+              System.out.print("BYE BYE !!");
+              ciclo = false;
+          }
+        */
+          switch(opcion){
+              case 1 ->{
+                  System.out.println("HAS SELECIONADO LA OPCION 1");
+                  ciclo = true;}
+                
+              case 2 ->{
+                  System.out.println("HAS SELECIONADO LA OPCION 2");
+                  ciclo = true;}
+                 
+              case 3 ->{
+                  System.out.println("HAS SELECIONADO LA OPCION 3");
+                  ciclo = true;}
+                 
+              case 4 ->{
+                  System.out.println("HAS SELECIONADO LA OPCION 4");
+                  ciclo = true;}
+                 
+              case 5 ->{
+                  System.out.println("BYE BYE!!");
+                  ciclo = false;
+                  break;
+              
+              }
+          }
+      }
+    }
+    
+}
